@@ -1,0 +1,31 @@
+<br>
+
+<table class = "table table-striped" id ="excel-table">
+
+    <thead>
+        <tr>
+            <th> Rec ID</th>
+            <th> Candidate No</th>
+            <th> Candidate Name </th>
+            <th> Score</th>
+             <th>Rank</th>
+             <th>UpdateDate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let candidate of candidates" >
+            <td> {{candidate.recId}} </td>
+            <td> {{candidate.candidateNo}} </td>
+            <td> {{ candidate.candidateName }} </td>
+            <td> {{ candidate.score }} </td>
+            <td> {{ candidate.rank }} </td>
+            <td> {{ candidate.updateDate }} </td>
+        </tr>
+    </tbody>
+
+</table>
+
+<p>Click on the download button for exporting data into the excel file.</p>
+<button (click)="exportexcel()"class="btn btn-primary">Download the Excel File</button>
+
+

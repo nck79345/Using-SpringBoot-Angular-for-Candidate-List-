@@ -1,0 +1,41 @@
+<br>
+<div class="col-md-6 offset-md-3">
+    <h3> Create Candidate </h3>
+    <form (ngSubmit) = "onSubmit()">
+<div class="form-group">
+            <label> Rec Id</label>
+            <input type="text" class ="form-control" id = "recId"
+                [(ngModel)] = "candidate.recId" name = "recId">
+        </div>
+        <div class="form-group">
+            <label> Candidate No</label>
+            <input type="text" class ="form-control" id = "candidateNo"
+                [(ngModel)] = "candidate.candidateNo" name = "candidateNo">
+        </div>
+
+        <div class="form-group">
+            <label> Candidate Name</label>
+            <input type="text" class ="form-control" string = "candidateName"
+                [(ngModel)] = "candidate.candidateName" name = "candidateName">
+        </div>
+<div class="form-group">
+            <label> Score </label>
+            <input type="text" class ="form-control" id = "score"
+                [(ngModel)] = "candidate.score" name = "score">
+        </div>
+<div class="form-group">
+            <label> Rank</label>
+            <input type="text" class ="form-control" id = "rank"
+                [(ngModel)] = "candidate.rank" name = "rank">
+        </div>
+<div class="form-group">
+            <label> UpdateDate</label>
+            <input type="datetime" class ="form-control" id = "updateDate"
+                [(ngModel)] = "candidate.updateDate" name = "updateDate">
+
+</div>
+
+        <button  class = "btn btn-success" type ="submit">Submit</button>
+
+    </form>
+    </div>

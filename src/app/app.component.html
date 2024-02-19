@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a routerLink="candidate-list" routerLinkActive="active" class="nav-link" >Candidate List</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="create-candidate" routerLinkActive="active" class="nav-link" >Add Candidate</a>
+        </li>
+    </ul>
+</nav>
+
+<h1 class="text-center"> {{title}} </h1>
+
+<div class = "container">
+
+    <router-outlet></router-outlet>
+
+</div>
+
+
+
+
+<!-- <table id="excel-table">
+
+     <tr>   
+             <th> Rec ID</th>
+            <th> Candidate No</th>
+            <th> Candidate Name </th>
+            <th> Score</th>
+             <th>Rank</th>
+             <th>UpdateDate</th>
+        </tr>
+  
+ <tbody>
+        <tr *ngFor = "let candidate of candidate" >
+            <td> {{candidate.recId}} </td>
+            <td> {{candidate.candidateNo}} </td>
+            <td> {{ candidate.candidateName }} </td>
+            <td> {{ candidate.score }} </td>
+            <td> {{ candidate.rank }} </td>
+            <td> {{ candidate.updateDate }} </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+ -->
